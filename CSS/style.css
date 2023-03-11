@@ -1,6 +1,7 @@
+/* ! General */
 :root{
+    /* fonts */
     --fuente: 'Outfit', sans-serif;;
-
     /* primary */
     --softBlue:hsl(215, 51%, 70%);
     --Cyan:hsl(178, 100%, 50%);
@@ -24,8 +25,49 @@ body{
     font-family: var(--fuente);
     font-size: 1.8rem;
     line-height: 1.5; /* interlineado */
-    background-color: var(--lightgray);
+    background-color: var(--veryDarkBlue-main);
 }
+
+/* ! Main content */
+
+.content{
+    width: 32rem;
+    background-color: var(--veryDarkBlue-card);
+    margin: 5rem auto;
+    border-radius: 1rem;
+}
+
+
+/* ! Main image */
+.content__img{
+    width: 27rem;
+    margin: 2.5rem;
+
+    
+}
+
+.content__img > img{
+    width: 27rem;
+    border-radius: 1rem;
+}
+
+/* ! info */
+.content__info{
+    width: 27rem;
+    margin: 2.5rem;
+}
+
+
+h1{
+    color: var(--white);
+    font-weight: 600;
+}
+
+h2{
+    color: var(--white);
+    font-weight: 300;
+}
+
 
 
 
