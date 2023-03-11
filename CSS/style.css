@@ -1,4 +1,4 @@
-/* ! General */
+/** General */
 :root{
     /* fonts */
     --fuente: 'Outfit', sans-serif;;
@@ -23,60 +23,138 @@ html{
 
 body{
     font-family: var(--fuente);
-    font-size: 1.8rem;
+    font-size: 1rem;
     line-height: 1.5; /* interlineado */
     background-color: var(--veryDarkBlue-main);
 }
 
-/* ! Main content */
 
+
+/** Main content */
 .content{
     width: 32rem;
+    height: 53rem;
     background-color: var(--veryDarkBlue-card);
     margin: 5rem auto;
     border-radius: 1rem;
 }
 
 
-/* ! Main image */
+
+/** Main image */
 .content__img{
     width: 27rem;
-    margin: 2.5rem;
+    height: 30rem;
+    margin: 0 2.5rem;
 
     
 }
 
-.content__img > img{
+.content__img  img{
     width: 27rem;
     border-radius: 1rem;
+    margin: 2.5rem 0;
+
 }
 
-/* ! info */
+.content__img  img:hover{ /* ! arreglar no furula bien */
+    background-image: url(../images/icon-view.svg);
+    cursor: pointer;
+}
+
+
+
+/** info */
 .content__info{
     width: 27rem;
-    margin: 2.5rem;
+    margin: 0 2.5rem;
+
 }
 
 
 h1{
     color: var(--white);
     font-weight: 600;
+    margin: 0;   
+}
+
+h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
 }
 
 h2{
-    color: var(--white);
-    font-weight: 300;
+    color: var(--softBlue);
+    font-weight: 200;
+}
+
+.info__spec{
+    display:flex;
+}
+
+.item{
+    width: ;
+    font-size: 1.5rem;
+    display: flex;
+
+}
+
+.item1{
+    color: var(--Cyan);
+}
+
+.item2{
+    color: var(--softBlue);
 }
 
 
 
+/** Line Division */
+hr{
+    color: var(--veryDarkBlue-line);
+}
 
 
-/* !Footer */
+
+/** Creator */
+.creator{
+    color: var(--softBlue);
+    display: flex;
+    font-size: 1.3rem;
+}
+
+.creator img{
+    width: 3rem;
+    height: 3rem;
+    border: solid var(--white) .1rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.creator a{
+    text-decoration: none;
+    color: var(--white); 
+}
+
+.creator a:hover{
+    color: var(--Cyan);
+}
+
+.creator > p{
+    margin-left: 1.5rem;
+}
+
+
+/** Footer */
 .attribution{ 
     font-size: 11px; 
     text-align: center; 
+    color: var(--white);
 }
 .attribution a{ 
-    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    color: var(--softBlue); 
+}
+.attribution a:hover{
+    color: var(--Cyan);
 }
