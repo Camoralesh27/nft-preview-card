@@ -35,7 +35,7 @@ body{
     width: 32rem;
     height: 53rem;
     background-color: var(--veryDarkBlue-card);
-    margin: 5rem auto;
+    margin: 5rem auto 2rem auto;
     border-radius: 1rem;
 }
 
@@ -88,7 +88,7 @@ h2{
     font-weight: 200;
 }
 
-.info__spec{
+.info__spec{ /* !arreglar los iconos y el flexbox */
     display:flex;
 }
 
@@ -150,6 +150,7 @@ hr{
     font-size: 11px; 
     text-align: center; 
     color: var(--white);
+    margin-bottom: 2rem;
 }
 .attribution a{ 
     text-decoration: none;
