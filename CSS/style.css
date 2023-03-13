@@ -5,6 +5,7 @@
     /* primary */
     --softBlue:hsl(215, 51%, 70%);
     --Cyan:hsl(178, 100%, 50%);
+    --Cyan_transp:hsla(178, 100%, 50%, 0.25);
     /* neutral */
     --veryDarkBlue-main: hsl(217, 54%, 11%);
     --veryDarkBlue-card: hsl(216, 50%, 16%);
@@ -33,7 +34,7 @@ body{
 /** Main content */
 .content{
     width: 32rem;
-    height: 53rem;
+    height: 51rem;
     background-color: var(--veryDarkBlue-card);
     margin: 5rem auto 2rem auto;
     border-radius: 1rem;
@@ -46,21 +47,40 @@ body{
     width: 27rem;
     height: 30rem;
     margin: 0 2.5rem;
-
-    
 }
 
-.content__img  img{
+.content__img  img{ /* *imagen abajo */
     width: 27rem;
     border-radius: 1rem;
     margin: 2.5rem 0;
-
+    position: absolute;
 }
 
-.content__img  img:hover{ /* ! arreglar no furula bien */
-    background-image: url(../images/icon-view.svg);
+.content__img-icon{     /* *capa */
+    height: 27rem;
+    width: 27rem;
+    background-color: var(--Cyan_transp);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2.5rem;
+    opacity: 0;
+}
+
+.content__img-icon:hover{
+    opacity: 100;
+    transition: all 200ms ease-out;
     cursor: pointer;
 }
+
+.content__img-icon img{ 
+    height: 7rem;
+    width: 7rem;
+}
+
+
 
 
 
@@ -75,7 +95,8 @@ body{
 h1{
     color: var(--white);
     font-weight: 600;
-    margin: 0;   
+    margin: 0;
+    margin-top: 1.5rem;   
 }
 
 h1:hover{
@@ -88,23 +109,42 @@ h2{
     font-weight: 200;
 }
 
-.info__spec{ /* !arreglar los iconos y el flexbox */
-    display:flex;
+.info__spec{  
+    display: flex;
+    justify-content: space-between;
 }
 
 .item{
-    width: ;
+    width: 13rem;
     font-size: 1.5rem;
     display: flex;
+}
 
+.item p{
+    margin: 0;
+}
+
+.item img{
+    margin-right: .5rem;
 }
 
 .item1{
     color: var(--Cyan);
 }
 
+.item1 img{
+    width: 1rem;
+    height: 2rem;
+}
+
 .item2{
     color: var(--softBlue);
+    justify-content: right;
+}
+
+.item2 img{
+    width: 2rem;
+    height: 2rem;
 }
 
 
